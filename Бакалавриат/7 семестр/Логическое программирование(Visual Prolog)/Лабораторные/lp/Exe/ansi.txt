@@ -1,0 +1,10 @@
+
+Имя компьютера: KST194-01
+Имя пользователя: student
+Кодовая страница: 866
+
+Программное обеспечение:
+["Adobe","AppDataLow","AVG","Chromium","Google","Intel","Microsoft","Policies","Prolog Development Center","Realtek","SAMSUNG","TortoiseGit","Classes"]
+
+Аппаратное обеспечение:
+[namedValue("Component Information",binary($[00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00])),namedValue("Identifier",string("AT/AT COMPATIBLE")),namedValue("Configuration Data",unsigned(4294967295)),namedValue("SystemBiosDate",string("02/05/10")),namedValue("SystemBiosVersion",string("ALASKA - 1072009BIOS Date: 02/05/10 19:13:52 Ver: 08.00.10BIOS Date: 02/05/10 19:13:52 Ver: 08.00.10")),namedValue("BootArchitecture",unsigned(1)),namedValue("PreferredProfile",unsigned(3)),namedValue("Capabilities",unsigned(230565)),namedValue("VideoBiosDate",string("10/03/20")),namedValue("VideoBiosVersion",string("Hardware Version 0.0"))]

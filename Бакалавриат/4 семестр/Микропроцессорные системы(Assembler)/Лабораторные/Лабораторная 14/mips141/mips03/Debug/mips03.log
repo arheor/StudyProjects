@@ -1,0 +1,4 @@
+﻿  Assembling lab3.asm...
+lab3.obj : warning LNK4258: директива "/ENTRY:main@0" несовместима с параметром "/ENTRY:main"; будет пропущена
+  mips03.vcxproj -> C:\Users\night\Desktop\Учеба!\4 семестр\Микропроц. сис 4 семестр\Лабораторная 14\mips141\Debug\mips03.exe
+  mips03.vcxproj -> C:\Users\night\Desktop\Учеба!\4 семестр\Микропроц. сис 4 семестр\Лабораторная 14\mips141\Debug\mips03.pdb (Partial PDB)

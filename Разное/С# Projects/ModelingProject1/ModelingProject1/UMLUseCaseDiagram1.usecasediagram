@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8b57d7fc-64f1-4c07-a7a7-1f8348f9ce1e" name="UMLUseCaseDiagram1" linkedPackageId="ecb69932-f48d-454a-94cb-5daf5aebc01c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="9be96c13-e64d-4a6a-b416-a8beb14f0bae">
+      <profileInstance Id="f9afe45f-3f00-4036-86ac-dfa992b2b824" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="574f6e9a-d2a4-4954-ad7d-64214e9253af">
+      <profileInstance Id="de6cf62e-a262-435e-94c2-ff2f0576108e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" name="Сдача теста по изучаемой дисциплине" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1ed42a91-e64f-44c2-aade-c1528341251f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="619b0bb7-544d-4575-b47b-e53096c2d1c3" name="Пользователь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eda0c951-f887-4811-8794-58883c198301" />
+        <targetEnds>
+          <association Id="f3f091e2-69d8-4075-a8fb-406346985925" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Сдача теста по изучаемой дисциплине" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" LastKnownName="Сдача теста по изучаемой дисциплине" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ceb60721-4cf4-45ba-89b9-436ddee68f85" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60ad77be-26ad-462c-a472-7a37a2bb3c13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86b7220b-0260-4d23-8e2a-c2028a497669" name="Сдача теста по изучаемой дисциплине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd1e6366-b309-4e66-8c60-d1eeda080742" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cedd5e72-be94-414f-83da-30711838fb23" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e9a871ca-828f-411c-b543-0f2f7335d1a4" name="Преподаватель" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ead112d8-a904-4db0-925c-0078a93ca006" />
+        <targetEnds>
+          <association Id="2648700d-2999-4c22-b698-46975acdc0a0" isDerived="false" sourceEndRoleName="Преподаватель" targetEndRoleName="Сдача теста по изучаемой дисциплине" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" LastKnownName="Сдача теста по изучаемой дисциплине" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7a21da4-4735-4162-8ea0-5286f6ac53db" name="Преподаватель" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4ba5ba5b-6aa6-4892-a3e9-c647985c1a1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a642995-dffc-4d27-b903-8fffa97efb70" name="Сдача теста по изучаемой дисциплине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7ef1eade-d707-4a33-8850-845acd2c6198" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f0a3f006-60ad-4d86-b138-b44775dcd7d2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e81be223-1638-496a-a286-0173bfdd1da0" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b66b92d6-6650-4a2d-acb2-30090c7b6fd8" />
+        <targetEnds>
+          <association Id="cb8a9125-4b22-4929-907c-dbf602e90491" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Сдача теста по изучаемой дисциплине" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" LastKnownName="Сдача теста по изучаемой дисциплине" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb34f170-8864-4d30-b9cd-95afe51ac748" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1de5b253-2bba-42ff-91ab-db5edcd54297" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="431c8507-f615-4e69-8c98-db24e6e5eb21" name="Сдача теста по изучаемой дисциплине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7233f7f2-aa81-4b1b-b636-3179418b5515" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab9ca5ac-dc76-4bf0-abaa-7db0ad8a3ad2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8819e53e-7f9b-46b7-8f7a-3ebccf99bdbd" name="ВУЗ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f57033ef-c8b6-4f53-809f-c541a05adcaa" />
+        <targetEnds>
+          <association Id="08c58160-d50e-4119-b712-698986a42af2" isDerived="false" sourceEndRoleName="ВУЗ" targetEndRoleName="Сдача теста по изучаемой дисциплине" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" LastKnownName="Сдача теста по изучаемой дисциплине" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c33e818-3771-407a-a282-68a8dab20876" name="ВУЗ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b85ed171-ced9-4f69-93bf-669c4525c2f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e009416-f583-4717-808f-252c5c3dd7cf" name="Сдача теста по изучаемой дисциплине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cbde58c8-8d3b-4543-b59c-1604d3fd67cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="898b80fb-df9d-4c41-9a45-8a28bb1c754b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6f5f6eb5-b18e-4fb7-bcf2-8503cd19e420" name="Гость" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e749efc-3db4-47bc-bef6-bcd82d4feb39" />
+        <targetEnds>
+          <association Id="bd38b3cb-58a6-48d2-9b05-81829e6f1f7b" isDerived="false" sourceEndRoleName="Гость" targetEndRoleName="Сдача теста по изучаемой дисциплине" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89cf1228-83e5-49c8-9d7f-60e10a44b33d" LastKnownName="Сдача теста по изучаемой дисциплине" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5cfd343c-35e7-421d-9c2f-c26c38232be6" name="Гость" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="617988cb-2e7c-462a-8add-ddf422fdeb95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6040c7ba-962b-4f08-bfac-8391322314ad" name="Сдача теста по изучаемой дисциплине" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b61868d4-94f0-4a71-848a-887c4a0b350d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5dd09bad-cc7f-4f05-9071-49fcb41e6906" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ecb69932-f48d-454a-94cb-5daf5aebc01c" name="ModelingProject1">
+    <elementDefinition Id="3be05494-c55e-4061-96be-5260b6135cc8" />
+  </package>
+</useCaseModelRoot>

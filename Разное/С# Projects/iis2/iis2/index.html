@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dracula Test</title>
+    <!-- подключаем необходимые js-файлы -->
+    <script type="text/javascript" src="js/raphael-min.js">
+    </script>
+    <script type="text/javascript" src="js/dracula_graffle.js">
+    </script>
+    <script type="text/javascript" src="js/dracula_graph.js">
+    </script>
+</head>
+<body>
+    <!-- здесь будет выведен граф -->
+    <div id="canvas"></div>
+    <script language="javascript" type="text/javascript">
+var g = new Graph();
+// добавляем узел с id "bebebe" и подписью "stand alone"
+// последний аргумент метода addNode - необязательный
+g.addNode("bebebe", { label: "stand alone" });
+
+for(var i = 1; i <= 13; i++) {
+ // метод addEdge(a, b) создает ребро между узлами а и b
+ // если узлы a и b еще не созданы, они создадутся автоматически
+ g.addEdge(i, (i + 3) % 5 + 1);
+ var j = (i + 7) % 5 + 1;
+
+ // можно указать дополнительные свойства ребра
+ g.addEdge(i, j, {
+   directed: true, // ориентированное ребро
+   stroke: "#fff", fill: "#5a5", // цвета ребра
+   label: i+":"+j } ); // надпись над ребром
+}
+
+// вычисляем расположение вершин перед выводом
+var layouter = new Graph.Layout.Spring(g);
+layouter.layout();
+
+// выводим граф
+var renderer = new Graph.Renderer.Raphael('canvas', g, 512, 368);
+renderer.draw();
+    </script>
+</body>
+</html>

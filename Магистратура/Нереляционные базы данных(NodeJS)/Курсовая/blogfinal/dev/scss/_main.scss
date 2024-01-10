@@ -1,0 +1,108 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .container {
+    .content {
+      flex: 3;
+      margin-right: $freeSpace;
+      margin-bottom: $freeSpace;
+      // padding: $freeSpace;
+      min-height: 100px;
+      // border: 1px solid $greyColor;
+      .pagination {
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0px 5px;
+          list-style: none;
+          border: 1px solid #e8e8e8;
+          border-radius: $borderRadius;
+          padding: 3px 5px;
+          background-color: white;
+
+          a,
+          a:visited,
+          a:active,
+          a:hover {
+            text-decoration: none;
+            color: $primaryColor;
+          }
+        }
+
+        li.active {
+          font-weight: bolder;
+          border-bottom-color: black;
+
+          a {
+            color: black;
+          }
+        }
+
+        li.posts-first,
+        li.posts-last {
+        }
+      }
+    }
+
+    .sidebar {
+      flex: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        margin-bottom: $freeSpace;
+        padding: $freeSpace;
+        width: 100%;
+        min-height: 100px;
+        border: 1px solid $greyColor;
+        background-color: $whiteColor;
+        border-radius: $borderRadius;
+
+        ul {
+          list-style: none;
+          li {
+            padding: 2px 0 2px;
+          }
+        }
+      }
+    }
+
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .content {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: $freeSpace;
+      }
+
+      .sidebar {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .box {
+          margin-right: $freeSpace;
+        }
+      }
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+      .content {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: $freeSpace;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+}

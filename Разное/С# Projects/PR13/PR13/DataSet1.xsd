@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Info" msprop:Generator_TableClassName="InfoDataTable" msprop:Generator_TableVarName="tableInfo" msprop:Generator_RowChangedName="InfoRowChanged" msprop:Generator_TablePropName="Info" msprop:Generator_RowDeletingName="InfoRowDeleting" msprop:Generator_RowChangingName="InfoRowChanging" msprop:Generator_RowEvHandlerName="InfoRowChangeEventHandler" msprop:Generator_RowDeletedName="InfoRowDeleted" msprop:Generator_RowClassName="InfoRow" msprop:Generator_UserTableName="Info" msprop:Generator_RowEvArgName="InfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnКод" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnPropNameInTable="КодColumn" msprop:Generator_UserColumnName="Код" type="xs:int" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fam" msprop:Generator_ColumnVarNameInTable="columnFam" msprop:Generator_ColumnPropNameInRow="Fam" msprop:Generator_ColumnPropNameInTable="FamColumn" msprop:Generator_UserColumnName="Fam" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DopInfo" msprop:Generator_TableClassName="DopInfoDataTable" msprop:Generator_TableVarName="tableDopInfo" msprop:Generator_TablePropName="DopInfo" msprop:Generator_RowDeletingName="DopInfoRowDeleting" msprop:Generator_RowChangingName="DopInfoRowChanging" msprop:Generator_RowEvHandlerName="DopInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="DopInfoRowDeleted" msprop:Generator_UserTableName="DopInfo" msprop:Generator_RowChangedName="DopInfoRowChanged" msprop:Generator_RowEvArgName="DopInfoRowChangeEvent" msprop:Generator_RowClassName="DopInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fam" msprop:Generator_ColumnVarNameInTable="columnFam" msprop:Generator_ColumnPropNameInRow="Fam" msprop:Generator_ColumnPropNameInTable="FamColumn" msprop:Generator_UserColumnName="Fam" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnКод" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnPropNameInTable="КодColumn" msprop:Generator_UserColumnName="Код" type="xs:int" minOccurs="0" />
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Info" />
+      <xs:field xpath="mstns:Код" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Info" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:keyref name="Info_DopInfo" refer="Constraint2" msprop:rel_Generator_UserChildTable="DopInfo" msprop:rel_Generator_ChildPropName="GetDopInfoRows" msprop:rel_Generator_UserRelationName="Info_DopInfo" msprop:rel_Generator_ParentPropName="InfoRow" msprop:rel_Generator_RelationVarName="relationInfo_DopInfo" msprop:rel_Generator_UserParentTable="Info" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:DopInfo" />
+      <xs:field xpath="mstns:UserId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
