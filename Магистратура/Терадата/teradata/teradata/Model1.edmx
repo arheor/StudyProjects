@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище Model" Provider="Teradata.Client.Provider" ProviderManifestToken="15.00" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="employee12345">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="first_name" Type="char" MaxLength="30" Unicode="false" />
+          <Property Name="phone_number" Type="char" MaxLength="20" Unicode="false" />
+          <Property Name="login" Type="char" MaxLength="30" Unicode="false" />
+          <Property Name="emp_password" Type="char" MaxLength="20" Unicode="false" />
+        </EntityType>
+        <EntityType Name="enter">
+          <Key>
+            <PropertyRef Name="id_enter" />
+          </Key>
+          <Property Name="id_enter" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id" Type="integer" />
+          <Property Name="date_enter" Type="char" MaxLength="50" Unicode="false" />
+        </EntityType>
+        <Association Name="0">
+          <End Role="employee12345" Type="Self.employee12345" Multiplicity="0..1" />
+          <End Role="enter" Type="Self.enter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee12345">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="enter">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище ModelContainer">
+          <EntitySet Name="employee12345" EntityType="Self.employee12345" Schema="SYSDBA" store:Type="Tables" />
+          <EntitySet Name="enter" EntityType="Self.enter" Schema="SYSDBA" store:Type="Tables" />
+          <AssociationSet Name="0" Association="Self.0">
+            <End Role="employee12345" EntitySet="employee12345" />
+            <End Role="enter" EntitySet="enter" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="employee12345">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="first_name" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="phone_number" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="login" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="emp_password" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="enter" Relationship="Self.C0" FromRole="employee12345" ToRole="enter" />
+        </EntityType>
+        <EntityType Name="enter">
+          <Key>
+            <PropertyRef Name="id_enter" />
+          </Key>
+          <Property Name="id_enter" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" />
+          <Property Name="date_enter" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="employee12345" Relationship="Self.C0" FromRole="enter" ToRole="employee12345" />
+        </EntityType>
+        <Association Name="C0">
+          <End Role="employee12345" Type="Self.employee12345" Multiplicity="0..1" />
+          <End Role="enter" Type="Self.enter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="employee12345">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="enter">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="employee12345" EntityType="Self.employee12345" />
+          <EntitySet Name="enter" EntityType="Self.enter" />
+          <AssociationSet Name="C0" Association="Self.C0">
+            <End Role="employee12345" EntitySet="employee12345" />
+            <End Role="enter" EntitySet="enter" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="employee12345">
+            <EntityTypeMapping TypeName="Model.employee12345">
+              <MappingFragment StoreEntitySet="employee12345">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="emp_password" ColumnName="emp_password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="enter">
+            <EntityTypeMapping TypeName="Model.enter">
+              <MappingFragment StoreEntitySet="enter">
+                <ScalarProperty Name="id_enter" ColumnName="id_enter" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="date_enter" ColumnName="date_enter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
