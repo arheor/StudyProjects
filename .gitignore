@@ -1,5 +1,5 @@
 bin/
 obj/
-**.rar
-.db
-.csv
+*.rar
+*.db
+*.csv
