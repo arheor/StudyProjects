@@ -1,0 +1,200 @@
+:root{
+    --minimagesize: 350px;
+}
+body{
+    min-width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(245, 244, 244);
+}
+img{
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.headlines{
+    margin-bottom: 40px; 
+}
+.text{
+    margin-bottom: 2em;
+}
+.csstext{
+    margin-bottom: 30pt;
+}
+.lists{
+    margin-bottom: 5%;
+}
+.images{
+    margin-bottom: 40px;
+}
+.links{
+    margin-bottom: 40px;
+}
+.forms{
+    margin-bottom: 40px;
+}
+.tables{
+    margin-bottom: 40px;
+}
+p{
+    margin: 5px;
+}
+.cssfontcolor {
+    color: green;
+}
+.cssfontcolorrgb {
+    color: rgb(110, 25, 255);
+}
+.cssfontstyle{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cssbackcolor{
+    background-color: aquamarine;
+}
+.cssbold{
+    font-weight: bold;
+}
+.cssitalic{
+    font-style: italic;
+}
+.cssfontvar{
+    font-variant: small-caps;
+}
+.textright{
+    min-height: var(--minimagesize);
+    text-align: justify;
+}
+.textleft{
+    min-height: var(--minimagesize);
+    text-align: justify;
+}
+.leftcat{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: auto;
+    float: left;
+}
+.rightcat{
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+    float: right;
+}
+.redirectimagebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redirectimage{
+    height: auto;
+    width: 30%;
+}
+.redirectimage:hover img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+.links{
+    text-align: center;
+}
+.forms{
+    display: flex;
+}
+.inputsform{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 8px;
+    max-width: 300px;
+    display: block;
+    background-color: rgb(216, 215, 215);
+}
+.inp{
+    height: 35px;
+    border-radius: 8px;
+    border-color: lightgray;
+    margin: auto;
+    width: 265px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.checkradbtn{
+    margin: auto;
+    text-align: left;
+    width: 265px;
+}
+textarea{
+    min-width: 265px;
+    max-width: 265px;
+}
+.inparea{
+    border-radius: 8px;
+    border-color: lightgray;
+}
+select.inp{
+    width: 273px;
+}
+.btn{
+    width: 90px;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: 2px solid rgb(184, 184, 184);
+}
+.buttons{
+    text-align: center;
+}
+table{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: auto;
+}
+th{
+    border: 2px solid red;
+    background-color: lightgrey;
+    padding: 10px;
+}
+td{
+    border: 2px solid black;
+    background-color: beige;
+    padding: 10px;
+}
+.frames{
+    display: grid;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+iframe{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    margin: 15px;
+}
+.otherframes{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.nyancat{
+    width: 100%;
+    height: 30%;
+}
+.redirectframe{
+    width: 40%;
+    height: 600px;
+}
+.wikiframe{
+    width: 40%;
+    height: 600px;
+}
+.section{
+    text-align: center;
+}
